@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+    <script type="text/javascript" src="./dist/nebulas.js"></script>
+
+    <script type="text/javascript" src="./dist/nebPay.js"></script>
+	    <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">好评返现NAS，支持京东、淘宝！</a>
+		</div>
+		<div class="w3l_search">
+
+		</div>
+		<div class="product_list_header">  
+
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Nebulas Mainnet</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- script-for sticky-nav -->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+<!-- //script-for sticky-nav -->
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="#buyer_div">我是商家</a><i>/</i></li>
+					<li><a href="#seller_div">我是买家</a><i>/</i></li>
+					<li><a href="#rules_div">好评返现规则</a><i>/</i></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+				<li>您必须安装 Chrome 钱包才能正常使用哦</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="services-bottom">
+		<div class="container">
+			<div class="col-md-3 about_counter_left">
+				<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+				<p class="counter" id='active_user'></p> 
+				<h3>活跃用户</h3>
+			</div>
+			<div class="col-md-3 about_counter_left">
+				<i class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></i>
+				<p class="counter" id='active_seller'></p> 
+				<h3>活跃商家</h3>
+			</div>
+			<div class="col-md-3 about_counter_left">
+				<i class="glyphicon glyphicon-export" aria-hidden="true"></i>
+				<p class="counter" id='active_buyer'></p> 
+				<h3>活跃买家</h3>
+			</div>
+			<div class="col-md-3 about_counter_left">
+				<i class="glyphicon glyphicon-bullhorn" aria-hidden="true"></i>
+				<p class="counter" id='active_goodtimes'></p> 
+				<h3>商品总数</h3>
+			</div>
+			<div class="clearfix"> </div>
+			<!-- Stats-Number-Scroller-Animation-JavaScript -->
+			<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+
+		</div>
+	</div>
+<!-- //products-breadcrumb -->
+<!-- banner -->
+	<div class="banner">
+		<div>	
+<!-- services -->
+		<div class="services" id="rules_div">
+			<h3>好评返现NAS规则</h3>
+			<div class="w3ls_service_grids1">
+				<div class="col-md-6 w3ls_service_grids1_left">
+					<img src="images/4.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 w3ls_service_grids1_right" style="margin-top:30px;">
+					<ul>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>商家支付NAS用于奖励给予好评的用户</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>用户支付少量gas手续费用于获取好评返现的NAS</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>商家支付少量的gas用于发布一条商品好评需求</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>商家可随时发布商品需求，并支付NAS好评的买家</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>我们只收取少量gas作为平台的运营</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>支持京东/淘宝的商品</li>
+					</ul>
+					<a href="#buyer_div">我是买家，马上领取NAS</a> <a href="#seller_div" style='margin-left:20px;'>我是商家</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<div class="services" id="buyer_div">
+			<h3>我是买家</h3>
+			<div class="w3ls_service_grids1">
+				<div class="col-md-6 w3ls_service_grids1_left">
+					<img src="images/4.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 w3ls_service_grids1_right" style="margin-top:30px;">
+					<ul>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>商家id ：<input type='text' value="" id='sellerid'/> </li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>商品地址 ：<input type='text' value="" id='goodurl' /></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>我的淘宝/京东用户名 ：<input type='text' value="" id='userid' /></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>所属网站 ： <select id='websitetype'>
+						<option>淘宝/天猫</option>
+						<option>京东</option>
+					</select></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>我的NAS钱包地址 ：<input type="text" value="" id='walletaddress'/> </li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>支持京东/淘宝的商品</li>
+					</ul>
+					<a href="javascript:confirm()">确认已发布好评</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<div class="services" id="seller_div">
+			<h3>我是商家</h3>
+			<div class="w3ls_service_grids1">
+				<div class="col-md-6 w3ls_service_grids1_left">
+					<img src="images/4.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 w3ls_service_grids1_right" style="margin-top:30px;">
+					<ul>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>商家id ：<input type='text' value="" id='buyerid_check'/> </li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>交易验证码 ：<input type="text" value="" id="tradeid_check"/> </li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>支持京东/淘宝的商品</li>
+					</ul>
+					<a href="javascript:checkBuyer()">查看买家是否已好评</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<div class="services" id="tradeid_div" style="display:none">
+			<h3>交易验证码 ：<span id='tradeid_num'></span></h3>
+			<div class="w3ls_service_grids1" style="width:100%;text-align:center">
+					<p style="color:red;font-size:15px;margin-top:20px;">请将该交易验证码发送给你的商家(不可泄露)，并请他登录该平台为您支付Nas</p>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<div class="services" id="nas_div" style="display:none">
+			<h3>确认并支付NAS</h3>
+			<div class="w3ls_service_grids1">
+				<div class="col-md-6 w3ls_service_grids1_left">
+					<img src="images/4.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 w3ls_service_grids1_right" style="margin-top:30px;">
+					<ul>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>对方的淘宝/京东账号 ：<span id="nas_buyer"></span></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>商品地址（已好评） ：<br /><br /><span id="nas_url"></span></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>所属网站 ：<span id="nas_website"></span></li>
+						<hr />
+						<li style='font-weight:bolder'><i class="fa fa-long-arrow-right" aria-hidden="true"></i>NAS交易验证码 ：<span id="nas_id"></span></li>
+						<li style='font-weight:bolder'><i class="fa fa-long-arrow-right" aria-hidden="true"></i>付款方 ：<span id="nas_seller"></span></li>
+						<li style='font-weight:bolder'><i class="fa fa-long-arrow-right" aria-hidden="true"></i>对方NAS钱包地址 ：<span id='buyer_wallet'></span> </li>
+						<li style='font-weight:bolder'><i class="fa fa-long-arrow-right" aria-hidden="true"></i>支付nas：<input type="text" value="" id='nas_amount'/> NAS</li>
+					</ul>
+					<a href="javascript:pay()">确认对方已好评，支付NAS</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<div class="services" id="finish_div" style="display:none">
+			<h3>该交易已完成并关闭</h3>
+
+		</div>
+		
+
+<!-- //services -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<!-- //banner -->
+<!-- services-bottom -->
+	
+<!-- //services-bottom -->
+<!-- newsletter-top-serv-btm -->
+	<div class="newsletter-top-serv-btm">
+		<div class="container">
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
+				<h3>更多商品选择</h3>
+	
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-bar-chart" aria-hidden="true"></i>
+				</div>
+				<h3>更多用户参与</h3>
+
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-truck" aria-hidden="true"></i>
+				</div>
+				<h3>更多NAS ~</h3>
+
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter-top-serv-btm -->
+
+<!-- //newsletter -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container" style='color:white'>
+				<p>Copyright &copy; 2018 好评返现NAS平台 由星云链区块链技术支持</p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<script type="text/javascript" id="snipcart" src="js/snipcart.js" data-api-key="ZGQxNzVjZTItOWRmNS00YjJhLTlmNGUtMDE4NjdiY2RmZGNj"></script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+  <script>
+   "use strict";
+    var dappContactAddress = "n1tGgEHQ9d4jUKwat8zPN2TQJz8UzhRgMHu";
+    var nebulas = require("nebulas"), Account = Account, neb = new nebulas.Neb();
+    neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"))
+
+
+    var NebPay = require("nebpay");     //https://github.com/nebulasio/nebPay
+    var nebPay = new NebPay();
+    var serialNumber
+	
+	$(function(){
+
+        var from = dappContactAddress
+        var value = "0";
+        var nonce = "0"
+        var gas_price = "100000"
+        var gas_limit = "200000"
+        var callFunction = "getdatas"
+        var contract = {
+            "function": callFunction,
+        }
+
+
+        neb.api.call(from, dappContactAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+            var result = resp.result;
+            
+            if (result === 'null') {
+				alert("暂未找到结果，欢迎添加！");
+            }
+            console.log(result);
+            result = JSON.parse(result);
+			
+			console.log(result);
+			
+			$("#active_buyer").html(result[0]);
+			
+			$("#active_seller").html(result[1]);
+			
+			$("#active_user").html(result[0]+result[1]);
+			
+			$("#active_goodtimes").html(result[2]);
+			
+
+        }).catch(function (err) {
+            console.log("error :" + err.message);
+
+        })
+	
+	
+	});
+	
+	function confirm() {
+		
+		var sellerid = $("#sellerid").val();
+		var goodurl = $("#goodurl").val();
+		var userid = $("#userid").val();
+		var websitetype = $("#websitetype").val();
+		var walletaddress = $("#walletaddress").val();
+		var tradeid = new Date().getTime();
+		
+		var tradeid = tradeid+Math.floor(Math.random()*100+1);
+		
+		if(sellerid == "" || goodurl == "" || userid == "" || tradeid == "") {
+			
+			return;
+		
+		}
+		
+		if(walletaddress.length != 35) {
+			
+			alert("请输入正确的钱包地址");
+			
+			return;
+		
+		}
+		
+		var from = dappContactAddress;
+        var value = "0";
+        var nonce = "0";
+        var gas_price = "1000000";
+        var gas_limit = "2000000";
+        var callFunction = "requestNas";
+        var callArgs = '["' + tradeid + '","' + sellerid + '","' + goodurl + '","' + userid + '","' + websitetype +  '","' + walletaddress + '"]';
+        console.log(callArgs);
+        var contract = {
+            "function": callFunction,
+            "args": callArgs
+        }
+
+		$("#tradeid_num").html(tradeid);
+		
+		serialNumber = nebPay.call(from, value, callFunction, callArgs, {    //使用nebpay的call接口去调用合约,
+            listener: function (resp) {
+                console.log("thecallback is " + resp.result);
+				
+				    intervalQuery = setInterval(function () {
+                        queryResult2();
+                    }, 10000);
+            }
+        });
+		
+	}
+
+        // 定时器
+        var intervalQuery;
+        // 根据交易流水号查询执行结果数据
+        function queryResult2() {
+            nebPay.queryPayInfo(serialNumber)
+                .then(function (resp) {
+                    $("#result").val(resp);
+                    var respObject = JSON.parse(resp)
+                    if(respObject.code === 0){
+                        alert(`提交信息成功!`);
+                        clearInterval(intervalQuery);
+							
+						$("#rules_div").css("display", "none");
+						$("#buyer_div").css("display", "none");
+						$("#seller_div").css("display", "none");
+						
+						$("#tradeid_div").css("display", "block");
+                    }
+                })
+                .catch(function (err) {
+                   console.log(err);
+                })
+        }	
+		
+		function checkBuyer(){
+		
+			var buyerid_check = $("#buyerid_check").val();
+			
+			var tradeid_check = $("#tradeid_check").val();
+			
+			
+			var from = dappContactAddress
+			var value = "0";
+			var nonce = "0"
+			var gas_price = "1000000"
+			var gas_limit = "2000000"
+			var callFunction = "get"
+			var callArgs = '["' + tradeid_check + '"]';
+			        var contract = {
+				"function": callFunction,
+				"args": callArgs
+			}
+			
+			neb.api.call(from, dappContactAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+				var result = resp.result;
+				
+				if (result === 'null') {
+					//alert("暂未找到结果，欢迎添加！");
+				}
+				//console.log(result);
+				result = JSON.parse(result);
+				
+				console.log(result);
+				
+				$("#nas_buyer").html(result.buyerId);
+				
+				$("#nas_url").html(result.goodUrl);
+				
+				$("#nas_website").html(result.websiteType);
+				
+				$("#nas_id").html(result.tradeId);
+				
+				$("#nas_seller").html(result.sellerId);
+				
+				$("#buyer_wallet").html(result.sellerAddress);
+				
+				$("#rules_div").css("display", "none");
+				$("#buyer_div").css("display", "none");
+				$("#seller_div").css("display", "none");
+				
+				$("#tradeid_div").css("display", "none");
+				$("#nas_div").css("display", "block");
+
+			}).catch(function (err) {
+			
+				alert("该交易已完成并关闭");
+			
+				//console.log("error :" + err.message);
+
+			})
+		
+		}
+		
+		function pay() {
+		
+			//var seller_wallet = $("#seller_wallet").val();
+			var buyer_wallet = $("#buyer_wallet").html();
+			
+			var nas_amount = $("#nas_amount").val();
+			
+			var tradeId = $("#nas_id").html();
+			
+			var sellerId = $("#nas_seller").html();
+			
+			var from = dappContactAddress
+			var value = nas_amount;
+			var nonce = "0"
+			var gas_price = "1000000"
+			var gas_limit = "2000000"
+			var callFunction = "checkNas"
+			// tradeId, sellerId, nas, buyerWallet
+			var callArgs = '["' + tradeId  + '","' + sellerId + '","' + nas_amount + '","' + buyer_wallet + '"]';
+			        var contract = {
+				"function": callFunction,
+				"args": callArgs
+			}
+			
+			serialNumber = nebPay.call(from, value, callFunction, callArgs, {    //使用nebpay的call接口去调用合约,
+            listener: function (resp) {
+                console.log("thecallback is " + resp.result);
+				
+				    intervalQuery = setInterval(function () {
+                        queryResultNas();
+                    }, 5000);
+            }
+			});
+			
+		
+
+		}
+		
+		        // 定时器
+        var intervalQuery;
+        // 根据交易流水号查询执行结果数据
+        function queryResultNas() {
+            nebPay.queryPayInfo(serialNumber)
+                .then(function (resp) {
+                    $("#result").val(resp);
+                    var respObject = JSON.parse(resp)
+                    if(respObject.code === 0){
+                        alert(`提交信息成功!`);
+                        clearInterval(intervalQuery);
+						$("#rules_div").css("display", "none");
+						$("#buyer_div").css("display", "none");
+						$("#seller_div").css("display", "none");
+						
+						$("#tradeid_div").css("display", "none");
+						$("#nas_div").css("display", "none");
+						$("#finish_div").css("display", "block");
+                    }
+                })
+                .catch(function (err) {
+                   console.log(err);
+                })
+        }
+
+  </script>
+</body>
+</html>
